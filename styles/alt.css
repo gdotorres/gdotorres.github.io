@@ -3,7 +3,7 @@
 
 body
 {
-	background-color: #181212
+	background-color: #101212
 }
 
 h1
@@ -29,6 +29,16 @@ h2
 p
 {
 	color: #adb7bd;
+	font-family: 'Times New Roman', sans-serif;
+	font-size: 16px;
+	line-height: 26px;
+	text-indent: 30px;
+	margin: 0;
+}
+
+.loving
+{
+	color: #e02012;
 	font-family: 'Times New Roman', sans-serif;
 	font-size: 16px;
 	line-height: 26px;

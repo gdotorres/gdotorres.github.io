@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	$("#btn_surprise").click(function(){
-		$("h2#story").html("Heey! Love ya! <3")
+		$("p#surprise_text").html("Hey, if you're seeing this, I guess you are Dorinha!")
+		$("p#surprise_text2").html("Gigi loves ya! <3.")
+
 	});
 });
