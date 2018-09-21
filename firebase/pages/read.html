@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<title>Firebase: Ler</title>
+
+		<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../scripts/functions.js"></script>
+	</head>
+	<body>
+		<div id="divRemove">
+			<h1>Ler do BD</h1>
+			<h3>Método X: Ler tudo</h3>
+			<button type="button" id="buttonReadAll">Ler TUDO!</button>
+			<table id="formReadAllResultTable" border=1 px>
+				<tbody id="formReadAllResultTbody"></tbody>
+			</table>
+			<h3>Método Y: Ler de acordo com o salário</h3>
+			<form id="formReadSalario" method="POST"></form>
+			<table>
+				<tr>
+					<td>Salario:</td>
+					<td>
+						<select name="frssSelect" form="formReadSalario">
+  							<option value="frssIgual">Igual a</option>
+  							<option value="frssMenorQue">Menor que</option>
+  							<option value="frssMenorIgualQue">Menor ou igual a</option>
+  							<option value="frssMaiorQue">Maior que</option>
+  							<option value="frssMaiorIgualQue">Maior ou igual a</option>  							
+  						</select>	
+  					</td>
+					<td><input type="text" name="inputFrssSalario" form="formReadSalario"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><input type="submit" value="Ler do BD" form="formReadSalario"></center></td>
+				</tr>						
+			</table>
+			<table id="formReadSalarioResultTable" border=1 px>
+				<tbody id="formReadSalarioResultTbody"></tbody>
+			</table>		
+		</div>
+		<script src="../scripts/read.js"></script>		
+	</body>
+</html>

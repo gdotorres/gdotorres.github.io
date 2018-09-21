@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<title>Firebase: Adicionar</title>
+
+		<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../scripts/functions.js"></script>
+	</head>
+	<body>
+		<div id="divAdd">
+			<h1>Adicionar ao BD</h1>
+			<form id="formAdd" method="POST"></form>	
+			<table>
+				<tr>
+					<td>Nome:</td>
+					<td><input type="text" name="inputAddNome" form="formAdd"></td>
+				</tr>
+				<tr>
+					<td>Sobrenome:</td>
+					<td><input type="text" name="inputAddSobrenome" form="formAdd"></td>
+				</tr>
+				<tr>
+					<td>Profissão:</td>
+					<td><input type="text" name="inputAddProfissao" form="formAdd"></td>
+				</tr>
+				<tr>
+					<td>Salário (R$):</td>
+					<td><input type="text" name="inputAddSalario" form="formAdd"></td>
+				</tr>
+				<tr bgcolor="#202020" id="trFormAddResult">
+					<td colspan="2" id="formAddResult"><p>Aqui vai a saída</p></td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><input type="submit" value="Adicionar ao BD" form="formAdd"></center></td>
+				</tr>
+			</table>			
+		</div>
+		<script src="../scripts/add.js"></script>
+	</body>
+</html>

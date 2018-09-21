@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../styles/main.css">
+		<title>Firebase: Remover</title>
+
+		<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="../scripts/functions.js"></script>
+	</head>
+	<body>
+		<div id="divRemove">
+			<h1>Remover do BD</h1>
+			<h3>Método X: Remover pelo exato nome e sobrenome</h3>
+			<form id="formRemoveDois" method="POST"></form>
+			<table>
+				<tr>
+					<td>Nome:</td>
+					<td><input type="text" name="inputRemoveDoisNome" form="formRemoveDois"></td>
+				</tr>
+				<tr>
+					<td>Sobrenome:</td>
+					<td><input type="text" name="inputRemoveDoisSobrenome" form="formRemoveDois"></td>
+				</tr>
+				<tr bgcolor="#202020" id="trRemoveDoisSobrenomeResult">
+					<td colspan="2" id="removeDoisSobrenomeResult"><center>&nbsp;Aqui vai a saída&nbsp;</center></td>
+				</tr>
+				<tr>
+					<td colspan="2"><center><input type="submit" value="Remover do BD" form="formRemoveDois"></center></td>
+				</tr>								
+			</table>
+			<h3>Método Y: Remover tudo</h3>
+			<table>
+				<tr bgcolor="#202020" id="trRemoveAllResult">
+					<td colspan="2" id="removeAllResult"><center>&nbsp;Aqui vai a saída&nbsp;</center></td>
+				</tr>
+			</table>			
+			<button type="button" id="buttonRemoveAll">Remover TUDO!</button>
+		</div>
+		<script src="../scripts/remove.js"></script>		
+	</body>
+</html>
