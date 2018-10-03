@@ -1,13 +1,26 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body
-{
+body {
 	background-color: #1C2329
 }
 
-h1
-{
+* {
+    box-sizing: border-box;
+}
+
+.menu {
+    width: 25%;
+    border: 1px solid #ffccbb;    
+    float: left;
+}
+.main {
+    width: 75%;
+    border: 1px solid #ffccbb;       
+    float: left;
+}
+
+h1 {
 	color: #ffffff;
 	font-family: 'Lato', sans-serif;
 	font-size: 54px;
@@ -16,8 +29,7 @@ h1
 	margin: 0 0 58px;
 }
 
-h2
-{
+h2 {
 	color: #ccedbf;
 	font-family: 'Helvetica', sans-serif;
 	font-size: 36px;
@@ -26,8 +38,7 @@ h2
 	margin: 0 0 40px;
 }
 
-p
-{
+p {
 	color: #adb7bd;
 	font-family: 'Lucida Sans', Arial, sans-serif;
 	font-size: 16px;
@@ -36,19 +47,16 @@ p
 	margin: 0;
 }
 
-a
-{
+a {
 	color: #fe921f;
 	text-decoration: underline;
 }
 
-a:hover
-{
+a:hover {
 	color: #ffffff 
 }
 
-.date
-{
+.date {
 	background: #fe921f;
 	color: #ffffff;
 	display: inline-block;
